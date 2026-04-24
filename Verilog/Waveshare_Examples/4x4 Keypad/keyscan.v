@@ -150,7 +150,7 @@ key_flag<=1'b1;  //????
 
   
 
- always @(clk_500khz or col_reg or row_reg)
+ always @(*)
 
      begin
 

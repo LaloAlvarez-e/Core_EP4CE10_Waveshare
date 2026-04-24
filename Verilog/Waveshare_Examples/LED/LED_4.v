@@ -1,7 +1,7 @@
 module LED_4(
 	input nrst,
 	input clk,
-	inout reg [3:0]led
+	output reg [3:0] led
 	
 	);
 	
@@ -19,15 +19,17 @@ module LED_4(
 		end
 		else if (counter == 1250000) begin
 			counter <= 0;
-			clk2 = ~clk2;
+			clk2 <= ~clk2;
 		end
 		else
 			counter <= counter + 32'd1;
 	end
 
 	always@(posedge clk2, negedge nrst) begin
-		if(!nrst)
+		if(!nrst) begin
 			led <= 4'd0;
+			i <= 8'd0;
+		end
 		else
 			case (i)
 		       0:	begin led <= 4'b0001;i<=i+1; end

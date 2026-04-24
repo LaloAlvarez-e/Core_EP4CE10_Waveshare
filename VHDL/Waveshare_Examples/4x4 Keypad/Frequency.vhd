@@ -42,27 +42,35 @@ BEGIN
 		VARIABLE Count  : STD_LOGIC_VECTOR(5 DOWNTO 0);
 		VARIABLE Count1 : STD_LOGIC_VECTOR(9 DOWNTO 0);
 	BEGIN 
-		------------------------------------
-		--Period: 1uS (Period1uS <= GCLKP1; )
-		IF( GCLKP1'EVENT AND GCLKP1='1' ) THEN 
-			IF( Count>"110000" ) THEN 	Count := "000000";
-			ELSE                  		Count := Count + 1;
+		IF( RESET='1' ) THEN
+			Count := "000000";
+			Count1 := "0000000000";
+			Period1uS <= '0';
+			KeyScan <= '0';
+			ClockScan <= '0';
+		ELSE
+			------------------------------------
+			--Period: 1uS (Period1uS <= GCLKP1; )
+			IF( GCLKP1'EVENT AND GCLKP1='1' ) THEN 
+				IF( Count>"110000" ) THEN 	Count := "000000";
+				ELSE                  		Count := Count + 1;
+				END IF;
+				
+				Period1uS <= Count(5);		-- 1MHz 
 			END IF;
 			
-			Period1uS <= Count(5);		-- 1MHz 
-		END IF;
-		
-		KeyScan <= Period1uS; 
-		
-		------------------------------------
-		--Period: 1mS 
-		IF( Period1uS'EVENT AND Period1uS='1' ) THEN 
-			IF( Count1>"1111100110" ) THEN 	Count1 := "0000000000";
-			ELSE                  			Count1 := Count1 + 1;
+			KeyScan <= Period1uS; 
+			
+			------------------------------------
+			--Period: 1mS 
+			IF( Period1uS'EVENT AND Period1uS='1' ) THEN 
+				IF( Count1>"1111100110" ) THEN 	Count1 := "0000000000";
+				ELSE                  			Count1 := Count1 + 1;
+				END IF;
 			END IF;
+			
+			ClockScan <= Count1(8); 
 		END IF;
-		
-		ClockScan <= Count1(8); 
 		
 	END PROCESS;
 	

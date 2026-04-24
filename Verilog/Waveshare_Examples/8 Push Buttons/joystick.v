@@ -12,23 +12,23 @@ reg[3:0] led_reg;
 reg[10:0] Count1;
 reg  Count;
 always@(posedge clk or negedge reset)
-if(!reset)
+if(!reset) begin
 Count1<=11'd0;
-else if(Count1==11'd1999)
-Count=~Count;
+Count<=1'b0;
+end
+else if(Count1==11'd1999) begin
+Count<=~Count;
+Count1<=11'd0;
+end
 else 
 Count1<=Count1+1'b1;
 
 
-always@(posedge Count or negedge reset)
+always@(posedge clk or negedge reset)
 if(!reset)
 led_reg<=4'b1111;
-else if(key==2'b10)
-led_reg<=4'b1110;
-else if(key==2'b01)
-led_reg<=4'b1101;
-
-else if(key==8'b11111110)
+else if(Count) begin
+if(key==8'b11111110)
 led_reg<=4'b1110;
 else if(key==8'b11111101)
 led_reg<=4'b1101;
@@ -58,6 +58,7 @@ else if(key==16'b01111111_11111111)
 led_reg<=4'b1111;*/
 else
 led_reg<=led_reg;
+end
 
 assign led=led_reg;
 

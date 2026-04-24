@@ -40,7 +40,7 @@ reg[3:0] num;
 
 always @ (posedge clk or negedge rst_n) begin
 	if(!rst_n) begin
-			bps_start_r <= 1'bz;
+			bps_start_r <= 1'b0;
 			tx_en <= 1'b0;
 			tx_data <= 8'd0;
 		end

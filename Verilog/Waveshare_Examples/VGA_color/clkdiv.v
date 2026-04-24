@@ -1,15 +1,15 @@
-module clkdiv(clk,
-              clkout,
-				  reset
-				  );
+module clkdiv(input clk,
+              output clkout,
+              input reset
+              );
 reg clkout_r;
 always@(posedge clk or negedge reset)
-	if(!reset) begin
-	clkout_r<=1'b0;
-	end
-	else
-	clkout_r<=!clkout+r;
-	
+if(!reset) begin
+clkout_r<=1'b0;
+end
+else
+clkout_r <= ~clkout_r;
+
 assign clkout=clkout_r;
-			  
+  
 endmodule

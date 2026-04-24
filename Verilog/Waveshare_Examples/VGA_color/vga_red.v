@@ -25,12 +25,13 @@ reg clkout_flag;// clkdiv scan
 reg clkout_r;
 reg clkout_r_r;
 
+wire clk0;
 
 always@(posedge clk0 or negedge reset)
 	if(!reset)begin
 	h_cnt<=10'd0;
 	end
-	else if(h_cnt==10'd800) h_cnt<=10'd0;
+	else if(h_cnt==10'd799) h_cnt<=10'd0;
 	else
 	h_cnt<=h_cnt+1'b1;
 
@@ -38,8 +39,8 @@ always@(posedge clk0 or negedge reset)
 	if(!reset) begin
 	v_cnt<=10'd0;
 	end
-	else if(v_cnt==10'd525)  v_cnt<=10'd0; 
-	else if(h_cnt==10'd800)  v_cnt<=v_cnt+1;
+	else if(v_cnt==10'd524)  v_cnt<=10'd0; 
+	else if(h_cnt==10'd799)  v_cnt<=v_cnt+1;
 	
 //generate hys
 reg hys_r;
