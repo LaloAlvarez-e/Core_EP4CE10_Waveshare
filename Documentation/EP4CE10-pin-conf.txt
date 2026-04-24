@@ -11,7 +11,7 @@ set_location_assignment	PIN_B7		-to	LED[3]
 
 
 
-# Herder_Left(just for reference, can't be Actual Settings of Tcl)
+# Header_Left(just for reference, can't be Actual Settings of Tcl)
 set_location_assignment	H_LEFT_1  -to	GND
 set_location_assignment	H_LEFT_2  -to	3.3V
 set_location_assignment	H_LEFT_3  -to	PIN_R12
