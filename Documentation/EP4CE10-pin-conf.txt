@@ -208,7 +208,7 @@ set_location_assignment	RIGHT    -to	PIN_G1
 set_location_assignment	UP	 -to	PIN_G2
 set_location_assignment	press 	 -to	PIN_D1
 
-#SDRAM_L£¨Pins of the core board refer to the motherboard £©
+#SDRAM_LÂ£Â¨Pins of the core board refer to the motherboard Â£Â©
 SDRAM_L_1  GND
 SDRAM_L_2  VCC
 SDRAM_L_3  PIN_T12
@@ -233,7 +233,7 @@ SDRAM_L_21 NC
 SDRAM_L_22 PIN_G15
 
 
-#SDRAM_R£¨Pins of the core board refer to the motherboard £©
+#SDRAM_RÂ£Â¨Pins of the core board refer to the motherboard Â£Â©
 SDRAM_R_1  VCC
 SDRAM_R_2  GND
 SDRAM_R_3  PIN_N8
@@ -274,7 +274,7 @@ set_location_assignment	PIN_R16	-to	RA[11]
 set_location_assignment	PIN_T15	-to	RA[12]
 
 set_location_assignment	PIN_K2	-to	DQ[0]
-set_location_assignment	PIN_K1-to	DQ[1]
+set_location_assignment	PIN_K1	-to	DQ[1]
 set_location_assignment	PIN_L2	-to	DQ[2]
 set_location_assignment	PIN_L1	-to	DQ[3]
 set_location_assignment	PIN_N2	-to	DQ[4]
