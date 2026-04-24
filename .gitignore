@@ -1,0 +1,32 @@
+# -----------------------------------------------------------------------
+# Quartus Prime generated files
+# -----------------------------------------------------------------------
+*.qws
+*.bak
+*.rpt
+*.smsg
+*.summary
+*.pin
+*.sof
+*.pof
+*.jdi
+*.rbf
+*.qpf
+*.qsf
+*.jic
+*.map
+*.fit
+*.asm
+*.tan
+*.sta
+*.eda
+*.sdc
+*.tcl
+*.txt_info
+db/
+incremental_db/
+output_files/
+greybox_tmp/
+hc_output/
+simulation/
+timing/
