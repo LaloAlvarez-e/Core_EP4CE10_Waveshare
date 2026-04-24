@@ -25,21 +25,32 @@ FPGA hardware description programs for the **Waveshare Core EP4CE10** developmen
 
 ```
 Core_EP4CE10_Waveshare/
-├── 01_Basics/
-│   ├── 01_LED_Blink/          # Toggle an LED using the system clock
-│   ├── 02_Button_LED/         # Control an LED with a push-button
-│   ├── 03_Counter/            # N-bit binary counter with LED output
-│   └── 04_Seven_Segment/      # Drive a 7-segment display
-├── 02_Intermediate/
-│   ├── 01_UART/               # UART transmitter / receiver
-│   ├── 02_PWM/                # Pulse-Width Modulation generator
-│   └── 03_VGA/                # VGA signal generator (640×480 @ 60 Hz)
-└── 03_Advanced/               # (Planned) DSP and image-processing cores
+├── Verilog/
+│   ├── 01_Basics/
+│   │   ├── 01_LED_Blink/      # Toggle an LED using the system clock
+│   │   ├── 02_Button_LED/     # Control an LED with a push-button
+│   │   ├── 03_Counter/        # N-bit binary counter with LED output
+│   │   └── 04_Seven_Segment/  # Drive a 7-segment display
+│   ├── 02_Intermediate/
+│   │   ├── 01_UART/           # UART transmitter / receiver
+│   │   ├── 02_PWM/            # Pulse-Width Modulation generator
+│   │   └── 03_VGA/            # VGA signal generator (640×480 @ 60 Hz)
+│   └── 03_Advanced/           # (Planned) DSP and image-processing cores
+└── VHDL/
+    ├── 01_Basics/
+    │   ├── 01_LED_Blink/
+    │   ├── 02_Button_LED/
+    │   ├── 03_Counter/
+    │   └── 04_Seven_Segment/
+    ├── 02_Intermediate/
+    │   ├── 01_UART/
+    │   ├── 02_PWM/
+    │   └── 03_VGA/
+    └── 03_Advanced/
 ```
 
 Each project folder contains:
-- `Verilog/` — `.v` source files
-- `VHDL/`    — `.vhd` source files
+- `.v` / `.vhd` source file(s)
 - `README.md` — pin assignments and usage notes
 
 ---
