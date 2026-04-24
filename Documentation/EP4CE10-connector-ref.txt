@@ -1,0 +1,266 @@
+EP4CE10 Connector & Peripheral Pin Reference
+=============================================
+For reference only - NOT valid Quartus TCL commands.
+See EP4CE10-pin-conf.tcl for sourceable pin assignments.
+
+#################################################################  Core Board Connectors  ##############
+
+
+# Header_Left (for reference only - connector position to FPGA pin mapping)
+Connector Pin | FPGA Pin
+-------------|----------
+1            | GND
+2            | 3.3V
+3            | PIN_R12
+4            | PIN_T12
+5            | PIN_R13
+6            | PIN_T13
+7            | PIN_R14
+8            | PIN_T14
+9            | PIN_R16
+10           | PIN_T15
+11           | PIN_P16
+12           | PIN_P15
+13           | PIN_N16
+14           | PIN_N15
+15           | PIN_L16
+16           | PIN_L15
+17           | PIN_K16
+18           | PIN_K15
+19           | PIN_J16
+20           | PIN_J15
+21           | PIN_G15
+22           | PIN_G16
+23           | GND
+24           | 5V
+25           | PIN_F15
+26           | PIN_F16
+27           | PIN_M10
+28           | PIN_L10
+29           | PIN_N13
+30           | PIN_M11
+31           | PIN_N14
+32           | PIN_P14
+33           | PIN_M12
+34           | PIN_L13
+35           | PIN_L14
+36           | PIN_L12
+37           | PIN_L11
+38           | PIN_J13
+39           | PIN_J12
+40           | PIN_K12
+41           | PIN_J11
+42           | PIN_K11
+43           | PIN_F11
+44           | PIN_K10
+45           | PIN_F13
+46           | PIN_J14
+47           | PIN_D16
+48           | PIN_F14
+49           | PIN_C16
+50           | PIN_D15
+51           | PIN_D14
+52           | PIN_C15
+53           | PIN_A15
+54           | PIN_C14
+
+
+# Header_Right (for reference only - connector position to FPGA pin mapping)
+Connector Pin | FPGA Pin
+-------------|----------
+1            | GND
+2            | 3.3V
+3            | PIN_L6
+4            | PIN_N8
+5            | PIN_P8
+6            | PIN_P6
+7            | PIN_N6
+8            | PIN_N5
+9            | PIN_P3
+10           | PIN_N3
+11           | PIN_L4
+12           | PIN_L3
+13           | PIN_T2
+14           | PIN_R1
+15           | PIN_P2
+16           | PIN_P1
+17           | PIN_N2
+18           | PIN_N1
+19           | PIN_L2
+20           | PIN_L1
+21           | PIN_K2
+22           | PIN_K1
+23           | GND
+24           | 5V
+25           | PIN_J2
+26           | PIN_J1
+27           | PIN_G2
+28           | PIN_G1
+29           | PIN_F2
+30           | PIN_F1
+31           | PIN_D1
+32           | PIN_C2
+33           | PIN_B1
+34           | PIN_A2
+35           | PIN_B3
+36           | PIN_A3
+37           | PIN_B4
+38           | PIN_A4
+39           | PIN_B5
+40           | PIN_A5
+41           | PIN_B6
+42           | PIN_A6
+43           | PIN_F3
+44           | PIN_D3
+45           | PIN_C3
+46           | PIN_D4
+47           | PIN_K6
+48           | PIN_K5
+49           | PIN_J6
+50           | PIN_G5
+51           | PIN_F7
+52           | PIN_F5
+53           | PIN_F6
+54           | PIN_E5
+
+
+# Header_Up (for reference only - connector position to FPGA pin mapping)
+Connector Pin | FPGA Pin
+-------------|----------
+1            | PIN_R11
+2            | PIN_N12
+3            | PIN_P11
+4            | PIN_N11
+5            | PIN_P9
+6            | PIN_N9
+7            | PIN_R10
+8            | PIN_T11
+9            | PIN_R9
+10           | PIN_T10
+11           | PIN_R8
+12           | PIN_T9
+13           | PIN_R7
+14           | PIN_T8
+15           | PIN_R6
+16           | PIN_T7
+17           | PIN_R5
+18           | PIN_T6
+19           | PIN_R4
+20           | PIN_T5
+21           | PIN_R3
+22           | PIN_T4
+23           | PIN_M9
+24           | PIN_T3
+25           | PIN_K9
+26           | PIN_L9
+27           | PIN_L8
+28           | PIN_K8
+29           | PIN_M7
+30           | PIN_M8
+31           | PIN_M6
+32           | PIN_L7
+
+
+# Header_Down (for reference only - connector position to FPGA pin mapping)
+Connector Pin | FPGA Pin
+-------------|----------
+1            | PIN_D11
+2            | PIN_B14
+3            | PIN_F10
+4            | PIN_E11
+5            | PIN_B13
+6            | PIN_A14
+7            | PIN_B12
+8            | PIN_A13
+9            | PIN_A11
+10           | PIN_A12
+11           | PIN_A10
+12           | PIN_B11
+13           | PIN_C9
+14           | PIN_D9
+15           | PIN_C8
+16           | PIN_D8
+17           | PIN_E10
+18           | PIN_E9
+19           | PIN_F9
+20           | PIN_G11
+21           | PIN_F8
+22           | PIN_E8
+23           | PIN_E7
+24           | PIN_D6
+25           | PIN_C6
+26           | PIN_D5
+27           | PIN_A9
+28           | PIN_B9
+29           | PIN_A8
+30           | PIN_B8
+31           | PIN_E6
+32           | PIN_A7
+
+
+#################################################################  DVK600 Motherboard  ##############
+
+# DVK600 Peripheral to FPGA Pin Mapping (for reference only)
+Signal   | FPGA Pin
+---------|----------
+Buz      | PIN_J1
+DS18B20  | PIN_J2
+DOWN     | PIN_F1
+LEFT     | PIN_F2
+RIGHT    | PIN_G1
+UP       | PIN_G2
+press    | PIN_D1
+
+
+# SDRAM_L (core board to motherboard connector - for reference only)
+Connector Pin | Signal/FPGA Pin
+-------------|----------------
+1            | GND
+2            | VCC
+3            | PIN_T12
+4            | PIN_R12
+5            | PIN_T13
+6            | PIN_R13
+7            | PIN_T14
+8            | PIN_R14
+9            | PIN_T15
+10           | PIN_R16
+11           | PIN_P15
+12           | PIN_P16
+13           | PIN_N15
+14           | PIN_N16
+15           | PIN_L15
+16           | PIN_L16
+17           | PIN_K15
+18           | PIN_K16
+19           | PIN_J15
+20           | PIN_J16
+21           | NC
+22           | PIN_G15
+
+
+# SDRAM_R (core board to motherboard connector - for reference only)
+Connector Pin | Signal/FPGA Pin
+-------------|----------------
+1            | VCC
+2            | GND
+3            | PIN_N8
+4            | PIN_L6
+5            | PIN_P6
+6            | PIN_P8
+7            | PIN_N5
+8            | PIN_N6
+9            | PIN_N3
+10           | PIN_P3
+11           | PIN_L3
+12           | PIN_L4
+13           | PIN_R1
+14           | PIN_T2
+15           | PIN_P1
+16           | PIN_P2
+17           | PIN_N1
+18           | PIN_N2
+19           | PIN_L1
+20           | PIN_L2
+21           | PIN_K1
+22           | PIN_K2
