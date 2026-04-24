@@ -30,3 +30,14 @@ greybox_tmp/
 hc_output/
 simulation/
 timing/
+
+# -----------------------------------------------------------------------
+# Simulator transcripts (may contain proprietary notices / local paths)
+# -----------------------------------------------------------------------
+transcript
+
+# -----------------------------------------------------------------------
+# Quartus TalkBack logs (contain machine identifiers / local paths)
+# -----------------------------------------------------------------------
+talkback/
+*.talkback.xml
